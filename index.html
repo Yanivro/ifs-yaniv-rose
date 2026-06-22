@@ -333,6 +333,19 @@
   /* ---------- voices / testimonials ---------- */
   .stars{ color:var(--gold); letter-spacing:3px; line-height:1; }
 
+  /* themed pill headline — tells the reader what each quote is about */
+  .voice-tag{
+    align-self:flex-start; display:inline-block; font-family:var(--font-sans);
+    font-size:11.5px; font-weight:800; letter-spacing:1.3px; line-height:1;
+    text-transform:uppercase; color:var(--cream-on);
+    padding:7px 14px 6px; border-radius:var(--r-pill); margin-bottom:16px;
+  }
+  .voice-tag.coral   { background:var(--coral-dark); }
+  .voice-tag.teal    { background:var(--teal-ink); }
+  .voice-tag.lavender{ background:#7a64a0; }
+  .voice-tag.gold    { background:#b78436; }
+  .voice-featured .voice-tag{ font-size:12px; margin-bottom:18px; }
+
   /* avatar (shared) — monogram now; drop a real photo in via the <img>.
      The <img> sits on top, so the initial is the graceful fallback. */
   .vc-avatar{
@@ -782,6 +795,7 @@
     </div>
     <!-- FEATURED — the fullest account of real change -->
     <figure class="voice-featured reveal">
+      <div class="voice-tag coral">Safe enough to go deep</div>
       <div class="stars" aria-label="5 out of 5">★★★★★</div>
       <blockquote class="quote">
         I couldn't have ever expected the profound realizations and healing
@@ -808,6 +822,7 @@
     <div class="voices-grid">
 
       <figure class="voice reveal">
+        <div class="voice-tag teal">Greater self-trust</div>
         <div class="stars" aria-label="5 out of 5">★★★★★</div>
         <p>Working with Yaniv has helped me see more clearly how I show up in
           relation to others. The mindset shifts have changed how I show up at
@@ -824,6 +839,7 @@
       </figure>
 
       <figure class="voice reveal">
+        <div class="voice-tag lavender">Become who you want to be</div>
         <div class="stars" aria-label="5 out of 5">★★★★★</div>
         <p>The most wonderful human and a brilliant coach. He guided and pushed
           me to uncover truths about myself, and did it in a way that made me
@@ -840,6 +856,7 @@
       </figure>
 
       <figure class="voice reveal">
+        <div class="voice-tag gold">Support through a hard time</div>
         <div class="stars" aria-label="5 out of 5">★★★★★</div>
         <p>I met Yaniv in a difficult period — first lockdown, a single mom of a
           four-year-old, an uncertain future. He became a huge support.</p>
@@ -858,6 +875,7 @@
       </figure>
 
       <figure class="voice reveal">
+        <div class="voice-tag coral">Care and acceptance</div>
         <div class="stars" aria-label="5 out of 5">★★★★★</div>
         <p>Thank you, thank you, thank you. It was a precious and important
           experience. I felt care, life and acceptance the whole time.</p>
